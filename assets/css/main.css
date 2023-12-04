@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-family: 'Poppins', sans-serif;
+    height: 5000px;
+}
+.header{
+    background-color: #fff;
+    padding: 13px 0px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+.container{
+    width:calc(100% - 120px) ;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+:root{
+  --mainColor:#545BE8;  
+}
+.active{
+    font-weight: 1000;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+}
+.header .logo img{
+    width: 35px;
+    height: 35px;
+}
+.header .logo a{
+    color: var(--mainColor);
+    font-size: 14px;
+}
+.header nav ul{
+    display: flex;
+    gap: 10px;
+    
+}
+.header nav ul li a{
+    color: #101928;
+    font-size: 14px;
+}
+.header .auth-btn a{
+    border-radius: 10px;
+    padding: 5px 35px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 1000;
+}
+.header .auth-btn .login{
+    color: var(--mainColor);
+    border:1px solid var(--mainColor);
+
+}
+.header .auth-btn .Register{
+    color: #fff;
+    background-color: var(--mainColor);
+    
+}
